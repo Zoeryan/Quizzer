@@ -19,11 +19,11 @@ public class Quizzer
 		{
 	System.out.println("Please an interger from 1 to 20, when you are done please enter -1.");
 
-
 	if(keyboard.hasNextInt())
 		{
 		inputNumber = keyboard.nextInt();
 		}
+	
 	else
 		{
 		System.out.println("Please enter an integer.");
