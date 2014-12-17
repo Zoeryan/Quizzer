@@ -135,7 +135,7 @@ public class Quizzer
 		else
 			{
 			System.out.println(middle);
-			System.out.println("Nice job! you got " + counter + " out of " + total +  " points from this quizzer!");
+			System.out.println("Nice job! you got " + counter + " out of " + total +  " points on this quizzer!");
 			break;
 			}
 
