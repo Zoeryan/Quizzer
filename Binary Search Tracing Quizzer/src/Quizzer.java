@@ -19,37 +19,29 @@ public class Quizzer
 		{
 	System.out.println("Please an interger from 1 to 20, when you are done please enter -1.");
 
-	if(keyboard.hasNextInt())
-		{
-		inputNumber = keyboard.nextInt();
-		}
-	
-	else
+	if(keyboard.hasNextInt() == false)
 		{
 		System.out.println("Please enter an integer.");
 		Scanner file = new Scanner(System.in);
-		inputNumber = file.nextInt();		
-		}
-	
-	if(inputNumber > 0 && inputNumber < 21)
-		{
-		myArray.add(inputNumber);
+		inputNumber = file.nextInt();	
 		}
 	
 	else
 		{
+		inputNumber = file.nextInt();		
+		}
+	
+	if(inputNumber < -1 && inputNumber > 20)
+		{
 		System.out.println("Please enter an integer between 1 and 20");
-		Scanner file = new Scanner(System.in);
 		inputNumber = file.nextInt();
+		}
+	
+	else
+		{
 		myArray.add(inputNumber);
 		}
 
-
-	
-	if(inputNumber != -1 && inputNumber > 0 && inputNumber < 21)
-			{
-			myArray.add(inputNumber);
-			}
 		}
 	
 	while(inputNumber != -1 && inputNumber > 0 && inputNumber < 21);
